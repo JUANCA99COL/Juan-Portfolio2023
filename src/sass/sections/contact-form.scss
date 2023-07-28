@@ -36,10 +36,11 @@ label {
 @media only screen and (max-width: 500px) {
     .inp {
         width: 100%;
+        height: auto;
     }
-    
+
     .message {
         width: 100%;
+        height: 150px;
     }
-    
 }
