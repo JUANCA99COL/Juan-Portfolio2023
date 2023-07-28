@@ -1,0 +1,45 @@
+.myForm {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.inp {
+    width: 400px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.message {
+    width: 400px;
+    height: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: none;
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+    .inp {
+        width: 100%;
+    }
+    
+    .message {
+        width: 100%;
+    }
+    
+}
