@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+html {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-thanks {
+    width: 180px;
+    height: 40px;
+    background: white;
+    color: black;
+    border: none;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
