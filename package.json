@@ -6,8 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build",
     "gh-pages-build": "parcel build --public-url ."
   },
