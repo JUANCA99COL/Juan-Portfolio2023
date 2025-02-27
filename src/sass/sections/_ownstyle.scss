@@ -185,10 +185,14 @@
         border-radius: 25px;
     }
 
-    #contact .contact-wrapper a {
+    .cta-btn--resume {
         font-size: 2rem;
         width: 80%;
-        // border-radius: 25px;
+        margin-top: 30px;
+    }
+
+    #contact .contact-wrapper__text, #contact .contact-wrapper a {
+        font-size: 1.5rem;
     }
 }
 

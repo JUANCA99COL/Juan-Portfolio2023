@@ -562,10 +562,10 @@
               <div class="fs-field">
                 <input type="hidden" name="_template" value="box">
                 <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
                 <label class="fs-label" for="name">Name</label>
                 <br>
-                <input type="name" class="fs-input" id="name" name="name" required />
+                <input type="text" class="fs-input" id="name" name="name" required />
               </div>
               <div class="fs-field">
                 <label class="fs-label" for="email">Email</label>
@@ -575,17 +575,12 @@
               <div class="fs-field">
                 <label class="fs-label" for="message">Message</label>
                 <br>
-                <textarea class="fs-textarea" type="message" id="message" name="message" required></textarea>
+                <textarea class="fs-textarea" type="text" id="message" name="message" required></textarea>
               </div>
               <div>
-                <span>
-                  <a 
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  type="submit">
-                  SEND</a>
-                </span>
+                <button class="cta-btn cta-btn--resume" type="submit">
+                    SEND
+                </button>
               </div>
             </form>
         </div>
