@@ -9,6 +9,7 @@
     <meta name="JUANCA99COL, javascript, react, Web and Ux developer" content="[JUANCA99COL], [Juan]" />
     <meta name="portfolio" content="[Juan Camilo] | Developer" />
     <script src="https://kit.fontawesome.com/3c98501c58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hamburgers.css">
     <link rel="stylesheet" href="styles.scss" />
     <script
       defer
@@ -17,20 +18,64 @@
   </head>
   <body>
     <div id="top"></div>
+     <div class="nav topbar">
+        <!-- logo  -->
+        <div>
+          <a href="index.html"><img class="logo-img" src="assets/logo-color-short.png" alt=""></a>
+        </div>
+        <!-- nav list -->
+        <ul>
+          <li>
+            <a href="#top">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+          <li>
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </li>
+        </ul>
+     </div>
+     <!-- second nav  -->
+     <div id="myNav" class="off-screen-menu">
+      <ul>
+        <li>
+          <a href="#top">HOME</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#projects">PROJECTS</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+     </div>
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
           Hey! my name is <span class="text-color-main">Juan Camilo</span>
           <br />
-          and I'm a UX/UI Designer 
-           <br>
+          and I'm a Web Designer 
+          <br>
           & Web Developer
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >show me more</a
-          >
+            >ABOUT ME</a>
         </p>
       </div>
     </section>
@@ -55,26 +100,32 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                
               It's good to see you here!
               <br><br>
-              I have a deep passion for design, driven by its boundless potential. My experience spans from creating modern websites to developing applications that deliver tangible value to clients.
-              I am continually eager to learn new technologies and programming languages to enhance my skill set. I approach my work with enthusiasm and find great satisfaction in the creative process.
+              I have a strong passion for design.
+              From the moment I was introduced to UX/UI design, I immersed myself in 
+              learning every aspect of the field and quickly developed a deep appreciation 
+              for creating intuitive and responsive websites and landing pages. 
               <br><br>
-              I reside in Wellington, New Zealand, a country that I have had the pleasure of calling home for the past six years.
+              With a background in web development, I feel confident in 
+              my technical abilities. I have hands-on experience with technologies including HTML5, CSS3, SASS, React, JavaScript (ES6), SQL, JSON, and NodeJS.
+              <br><br>
+              I approach my work with enthusiasm, 
+              finding fulfillment in the creative process, delivering exceptional customer service
+              while continuously honing my problem-solving and communication skills.
               <br><br>
               Have a look at my resume.
               </p>
-              <span class="d-flex mt-3">
+              <!-- <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
                   href="assets/resume.pdf"
                 >
-                  View Resume
+                  VIEW RESUME
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -85,7 +136,7 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text py-5">Projects</h2>
+          <h2 class="section-title project-title-unique">Projects</h2>
           <!-- project starts  -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -101,20 +152,19 @@
                 </div>
                 <a
                   rel="noreferrer"
-                  target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://juan-team-app.webflow.io/"
+                  href="teamApp.html"
                 >
-                  See Live
+                  DETAILS
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
                   href="https://juan-team-app.webflow.io/"
                 >
-                  Source Code
-                </a>
+                  SEE LIVE
+                </a> -->
                 <div class="languages-parent">
                   <i class="my-icons fa-brands fa-webflow" style="color: #74C0FC;"></i>
                   <i class="my-icons fa-brands fa-figma" style="color: #ffffff;"></i>
@@ -156,20 +206,19 @@
                 </div>
                 <a
                   rel="noreferrer"
-                  target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://chat-app-codewithjuan.webflow.io/"
+                  href="ChatApp.html"
                 >
-                  See Live
+                  DETAILS
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
                   href="https://chat-app-codewithjuan.webflow.io/"
                 >
-                  Source Code
-                </a>
+                  SEE LIVE
+                </a> -->
                 <div class="languages-parent">
                   <i class="my-icons fa-brands fa-webflow" style="color: #74C0FC;"></i>
                   <i class="my-icons fa-brands fa-figma" style="color: #ffffff;"></i>
@@ -211,32 +260,26 @@
                 </div>
                 <a
                   rel="noreferrer"
-                  target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://master-touch.co.nz/"
+                  href="Mastertouch.html"
                 >
-                  See Live
+                  DETAILS
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="https://github.com/JUANCA99COL/Mastertouch"
+                  href="https://master-touch.co.nz/"
                 >
-                  Source Code
-                </a>
+                  SEE LIVE
+                </a> -->
                 <div class="languages-parent">
-                  <i class="my-icons fa-brands fa-html5"
-                  style="color: red;"
-                  >
-                  </i>
-                  <i class="my-icons fa-brands 
-                  fa-css3-alt"
-                  style="color: lightblue;"
-                  ></i>
+                  <i class="my-icons fa-brands fa-html5"style="color: red;"></i>
+                  <i class="my-icons fa-brands fa-css3-alt"style="color: lightblue;"></i>
                   <i class="my-icons fa-brands fa-js" style="color: #ffea00;"></i>
                   <i class="my-icons fa-brands fa-node-js" style="color: #ffffff;"></i>
                   <i class="my-icons fa-brands fa-bootstrap" style="color: #4c00ff;"></i>
+                  <i class="my-icons fa-brands fa-figma" style="color: #ffffff;"></i>
                 </div>
               </div>
             </div>
@@ -274,32 +317,26 @@
                 </div>
                 <a
                   rel="noreferrer"
-                  target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://juanca99col.github.io/JDL/"
+                  href="JDL.html"
                 >
-                  See Live
+                  DETAILS
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="https://github.com/JUANCA99COL/JDL"
+                  href="https://juanca99col.github.io/JDL/"
                 >
-                  Source Code
-                </a>
+                  SEE LIVE
+                </a> -->
                 <div class="languages-parent">
-                  <i class="my-icons fa-brands fa-html5"
-                  style="color: red;"
-                  >
-                  </i>
-                  <i class="my-icons fa-brands 
-                  fa-css3-alt"
-                  style="color: lightblue;"
-                  ></i>
+                  <i class="my-icons fa-brands fa-html5"style="color: red;"></i>
+                  <i class="my-icons fa-brands fa-css3-alt"style="color: lightblue;"></i>
                   <i class="my-icons fa-brands fa-js" style="color: #ffea00;"></i>
                   <i class="my-icons fa-brands fa-node-js" style="color: #ffffff;"></i>
                   <i class="my-icons fa-brands fa-bootstrap" style="color: #4c00ff;"></i>
+                  <i class="my-icons fa-brands fa-figma" style="color: #ffffff;"></i>
                 </div>
               </div>
             </div>
@@ -445,7 +482,7 @@
             </div>
           </div> -->
           <!-- /END Project -->
-          <!-- <div class="row">
+          <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">SPACEMEN | PERSONAL PROJECT</h3>
@@ -459,18 +496,18 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://juanca99col.github.io/SpaceMen/"
+                  href="https://github.com/JUANCA99COL/SpaceMen"
                 >
-                  See Live
+                  SOURCE CODE
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="https://github.com/JUANCA99COL/SpaceMen"
+                  href="https://juanca99col.github.io/SpaceMen/"
                 >
-                  Source Code
-                </a>
+                  SEE LIVE
+                </a> -->
                 <div class="languages-parent">
                   <i class="my-icons fa-brands fa-html5"
                   style="color: red;"
@@ -499,133 +536,13 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/spacemen-logo.png"
+                      src="assets/spacemen.jpg"
                     />
                   </div>
                 </a>
               </div>
             </div>
-          </div> -->
-          <!-- /END Project -->
-          <!-- <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">PRELUDE PORTFOLIO | ACADEMIC PROJECT</h3>
-                <div>
-                  <p class="mb-4">
-                    This Project was Coded with a team of <br> 5 developers to showcase all the projects from other students within the same promotion.
-                    We used branches in github to code differents sections of the project, I was in charge of the main page, styling and animations.
-                    Languages used: JavaScript, CSS3, HTML5, Git & Node.js.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://juanca99col.github.io/prelude-portfolio/"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/JUANCA99COL/prelude-portfolio"
-                >
-                  Source Code
-                </a>
-                <div class="languages-parent">
-                  <i class="my-icons fa-brands fa-html5"
-                  style="color: red;"
-                  >
-                  </i>
-                  <i class="my-icons fa-brands 
-                  fa-css3-alt"
-                  style="color: lightblue;"
-                  ></i>
-                  <i class="my-icons fa-brands fa-js" style="color: #ffea00;"></i>
-                  <i class="my-icons fa-brands fa-node-js" style="color: #ffffff;"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://juanca99col.github.io/prelude-portfolio/index.html" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/prelude-logo.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- /END Project -->
-          <!-- <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">FIGMA PROJECTS | PROTOTYPES</h3>
-                <div>
-                  <p class="mb-4">
-                    Here is some of my work using figma.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero m-2"
-                  href="https://www.figma.com/file/t3TBwCjAkTTH5FM0J0JOg3/App?type=design&node-id=0%3A1&mode=design&t=YOnK1WAodjyQUJFg-1"
-                >
-                  PROJECT 1
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero m-2"
-                  href="https://www.figma.com/design/szRrrb54X41QtiBTTOc77X/AS-DESIGN?node-id=0-1&t=t1JEaYvAmbXoRhz5-1"
-                >
-                  PROJECT 2
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero m-2"
-                  href="https://www.figma.com/design/uyJEy8z59Jqo8xsSkvJKdz/www.ducks.nz?node-id=0-1&t=MK3eTODO82f4n350-1"
-                >
-                  PROJECT 3
-                </a>
-                <div class="languages-parent">
-                  <i class="my-icons fa-brands fa-figma" style="color: green;"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/figma.png"
-                    />
-                  </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- /END Project -->
+          </div>
         </div>
       </div>
     </section>
@@ -636,20 +553,41 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
           <p class="contact-wrapper__text">Lets connect! <br>Thank you for checking my work, <br> I am always open to exchange insights, share experiences, <br> and explore new professional opportunities.</p>
-          <span class="my-3">
-            <a
-              rel="noreferrer"
-              target="_blank"
-              class="cta-btn cta-btn--resume"
-              href="mailto:jcaro112699@gmail.com"
+          <form
+              action="https://formsubmit.co/jcaro112699@gmail.com"
+              class="fs-form"
+              target="_top"
+              method="POST"
             >
-              Email me
-            </a>
-          </span>
-          <div class="my-5">
-            <img class="business-card mt-5" src="assets/Frame 6-min.png" alt="">
-            <img class="business-card mt-5" src="assets/Frame 5-min.png" alt="">
-          </div>
+              <div class="fs-field">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_captcha" value="false">
+                <label class="fs-label" for="name">Name</label>
+                <br>
+                <input type="name" class="fs-input" id="name" name="name" required />
+              </div>
+              <div class="fs-field">
+                <label class="fs-label" for="email">Email</label>
+                <br>
+                <input type="email" class="fs-input" id="email" name="email" required />
+              </div>
+              <div class="fs-field">
+                <label class="fs-label" for="message">Message</label>
+                <br>
+                <textarea class="fs-textarea" type="message" id="message" name="message" required></textarea>
+              </div>
+              <div>
+                <span>
+                  <a 
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  type="submit">
+                  SEND</a>
+                </span>
+              </div>
+            </form>
         </div>
       </div>
     </section>
@@ -661,7 +599,7 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://www.instagram.com/juankcaro/" target="_blank">
+          <a rel="noreferrer" href="https://www.instagram.com/jc_creativenz/" target="_blank">
             <i class="fa fa-instagram fa-inverse"></i>
           </a>
           <a rel="noreferrer" href="https://www.linkedin.com/in/juan-camilo-caro-rodriguez-758a081a6/" target="_blank">

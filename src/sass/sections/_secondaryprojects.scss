@@ -1,0 +1,162 @@
+#MasterPage {
+    padding: 10%;
+    background-color: $black-color;
+}
+
+#design-section {
+    padding: 5%;
+    background-color: $black-color;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer-projects {
+    margin-top: -250px;
+}
+
+.subtitle-projects-master {
+    margin-top: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    color: $white-color;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.title-projects-master {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $primary-color;
+    text-align: center;
+    padding: 40px;
+}
+
+.text-projects-master {
+    font-size: 18px;
+    line-height: 28.8px;
+    text-align: left;
+    color: $white-color;
+}
+
+.sub-header-projects-master {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: $white-color;
+}
+
+.list-projects-master {
+    color: $white-color;
+    font-size: 18px;
+    text-align: left;
+}
+
+.btns-projects-master {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns-projects-master button {
+    margin-right: 70px;
+    width: 206px;
+    height: 53px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.border-btn {
+    border-bottom: solid 2px $primary-color;
+    width: 300px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.container-projects-master {
+    margin: 10%;
+}
+
+.container-projects-master img {
+    height: auto;
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+// TABLETS 
+@media only screen and (max-width: 856px) {
+    .btns-projects-master button {
+        width: 180px;
+        height: 45px;
+        margin-top: 25px;
+        display: block;
+    }
+
+    .btns-projects-master {
+        display: block;
+    }
+
+    .title-projects-master {
+        font-size: 30px;
+    }
+
+    .border-btn {
+        margin-top: 60px;
+    }
+
+    .subtitle-projects-master {
+        margin-top: 50px;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .footer-projects {
+        margin-top: -100px;
+    }
+
+    .btns-projects-master button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .subtitle-projects-master {
+        border-bottom: 1px solid white;
+        width: 180px;
+        text-align: center;
+        margin: 60px auto;
+    }    
+}
+
+// MOBILES 
+@media only screen and (max-width: 508px) {
+    .text-projects-master {
+        font-size: 16px;
+    }
+
+    .list-projects-master {
+        font-size: 16px;
+    }
+
+    .border-btn {
+        width: 170px;
+    }
+
+    .container-projects-master img {
+        margin: 25px auto;
+    }
+
+    .title-projects-master {
+        font-size: 20px;
+    }
+}
