@@ -1,11 +1,13 @@
 #MasterPage {
     padding: 10%;
-    background-color: $black-color;
+    background: $black-color;
+    // background: linear-gradient(90deg, rgba(127, 56, 255, 1) 0%, rgba(17, 156, 255, 1) 100%);
+    color: white;
 }
 
 #design-section {
     padding: 5%;
-    background-color: $black-color;
+    // background-color: $;
 }
 
 .bold {
@@ -23,7 +25,7 @@
     color: $white-color;
     text-transform: uppercase;
     padding: 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white-color;
     width: 400px;
     text-align: center;
     margin: auto;
